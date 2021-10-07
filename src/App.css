@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  width: 980px;
+  height: 300x;
+  background: #cccccc;
+  margin: 50px auto 0;
+  word-break: break-all;
+  font-size: 13px;
+ 
+}
+.bloc-tabs {
+  display : flex;
+
 }
 
-.App-link {
-  color: #61dafb;
+.tabs {
+   
+  padding: 18px;
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  background: #ffffff;
+  box-sizing: content-box;
+  position: relative;
+  outline: none ;
+  font-size: 9px;
+  color:#817f7f
+}
+  
+
+
+.active-tabs {
+  background:#ffffff;
+  border-bottom: 1px solid transparent;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translate(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: blue;
 }
+
+button {
+  border: none;
+}
+
+.content-tabs{
+  flex-grow: 1;
+ 
+}
+
+.content {
+  background:#fdf7f7;
+  padding: 20px;
+  width:100%;
+  height:  100%;
+  display: none;
+}
+
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #ffffff;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+
+.active-content {
+  display: block;
+}
+
+
+@media(max-width:650px){
+  .container{
+      margin:45px 7.5%;
+      
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+      .content{
+          width: 350px;
+          max-width: 100%;
+          margin:15px auto;
+      }
+
+      
+      
+
+      
+  }
