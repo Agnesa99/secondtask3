@@ -1,0 +1,40 @@
+ .UseState button{
+    border:1px solid #ddd;
+    padding: 1px 25px;
+    background: #ffff;
+    padding-top: 1px;
+    padding-right: 30px;
+    margin:  0;
+    border-radius: 8px;
+    height: 45px;
+    width:983px;
+    font-size: 16px;
+    display: flex;
+    margin-left: 190px;
+   padding-top: 20px;
+  
+    
+ }
+.UseState p {
+    color:rgb(182, 179, 179);
+    border: 1px solid #ddd;
+    padding: 1px 25px;
+    background: #ffff;
+    padding-top: 3px;
+    padding-right: 30px;
+    margin:   0;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 65px;
+    margin-left: 190px;
+    width:983px;
+  
+   
+   
+}
+.UseState{
+    padding-top: 40px;
+}
+
+
+  
