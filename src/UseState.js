@@ -1,35 +1,31 @@
 import React, {useState} from "react";
-import "./UseState.css";
+import {MdKeyboardArrowDown,MdKeyboardArrowUp} from 'react-icons/md'
+  const UseState=(props) => {
 
-
-function UseState () {
-    const [show , setShow]=useState(true)
+    const[answer, setAnswer] = useState(false)
+    const showAnswer = () => {
+        setAnswer(!answer)
+    }
     return (
-        <div className="UseState">
-            <button onClick={()=> setShow (!show)}>Why Park a domain name in ParkName  ?                         </button>
-            {
-                show ? <p>Parkname is the leading industry standard for domain name parking and monetization sevices.We offer a wide variety of services to help you achieve        success.  </p> : null
-            }
-          
-            <div classNaem="AboutUs">
-                <button onClick={()=> setShow (!show)}> About us </button>
-                {
-                   show ? <p>How does Parkname seperate itself from other domain name parking companies?
-                           </p> : null
-                   
-                   
-            
-                }
-            
+        <div className='single-question'>
+            <div className='question' onClick={showAnswer}>
+                <h6>{props.question}</h6>
+                <button type ='button'>
+                    {answer ? <MdKeyboardArrowUp />  :  <MdKeyboardArrowDown/>}
+                </button>
             </div>
-            
-        </div>
-    ) 
-}
 
-  
+            <div className='answer' style={{display : answer ? 'block' : 'none'}}>
+            {props.answer ? <p>{props.answer}</p> : null}
+            {props.answer2 ? <p>{props.answer2}</p> : null}
+            {props.answer3 ? <p>{props.answer3}</p> : null}
+            {props.answer4 ? <p>{props.answer4}</p> : null}
+            </div>
+        </div>
+    )
+  }
     
 
  
 
-export default UseState;
+export default UseState

@@ -1,3 +1,6 @@
+import {BsPersonCircle} from 'react-icons/bs'
+
+
 export const Data1 = [ 
     {
         title: ".COM",
@@ -39,4 +42,22 @@ export const Data1 = [
         description:"Instead of $10.99/yr"
     },
     
+
+     
 ]
+     export const Data2= [
+         {
+             question:" Why Park a domain name in Parkname?",
+             answer:" Parkname is the leading industry standard for domain name parking and monetization sevices.We offer a wide variety of services to help you achieve success. ",
+         },
+
+
+         {  
+             question: " About Us",
+             answer: "How does Parkname seperate itself from other domain name parking companies? ",
+             answer2: "Is Parkname actually free?",
+             answer3:" What you do?",
+             answer4:"When was Parkname first founded?",
+             
+         },
+     ]

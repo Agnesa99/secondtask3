@@ -1,40 +1,23 @@
- .UseState button{
+.single-question{
     border:1px solid #ddd;
-    padding: 1px 25px;
-    background: #ffff;
-    padding-top: 1px;
-    padding-right: 30px;
-    margin:  0;
-    border-radius: 8px;
-    height: 45px;
-    width:983px;
-    font-size: 16px;
+    padding:20px 30px;
+    border-radius: 7px;
+    margin:20px 0;
+}
+.question{
     display: flex;
-    margin-left: 190px;
-   padding-top: 20px;
-  
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
     
- }
-.UseState p {
-    color:rgb(182, 179, 179);
-    border: 1px solid #ddd;
-    padding: 1px 25px;
-    background: #ffff;
-    padding-top: 3px;
-    padding-right: 30px;
-    margin:   0;
-    border-radius: 8px;
-    font-size: 15px;
-    height: 65px;
-    margin-left: 190px;
-    width:983px;
-  
-   
-   
-}
-.UseState{
-    padding-top: 40px;
+
 }
 
-
-  
+.answer p{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 17px;
+    color:rgb(153, 149, 149)
+    
+}
