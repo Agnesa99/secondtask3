@@ -1,4 +1,4 @@
-import {BsPersonCircle} from 'react-icons/bs'
+
 
 
 export const Data1 = [ 
@@ -41,8 +41,6 @@ export const Data1 = [
         data:"$26.33/yr",
         description:"Instead of $10.99/yr"
     },
-    
-
      
 ]
      export const Data2= [
@@ -52,12 +50,6 @@ export const Data1 = [
          },
 
 
-         {  
-             question: " About Us",
-             answer: "How does Parkname seperate itself from other domain name parking companies? ",
-             answer2: "Is Parkname actually free?",
-             answer3:" What you do?",
-             answer4:"When was Parkname first founded?",
-             
-         },
+         
      ]
+     

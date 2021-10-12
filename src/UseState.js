@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {MdKeyboardArrowDown,MdKeyboardArrowUp} from 'react-icons/md'
+
   const UseState=(props) => {
 
     const[answer, setAnswer] = useState(false)
@@ -13,13 +14,12 @@ import {MdKeyboardArrowDown,MdKeyboardArrowUp} from 'react-icons/md'
                 <button type ='button'>
                     {answer ? <MdKeyboardArrowUp />  :  <MdKeyboardArrowDown/>}
                 </button>
+            
             </div>
 
             <div className='answer' style={{display : answer ? 'block' : 'none'}}>
             {props.answer ? <p>{props.answer}</p> : null}
-            {props.answer2 ? <p>{props.answer2}</p> : null}
-            {props.answer3 ? <p>{props.answer3}</p> : null}
-            {props.answer4 ? <p>{props.answer4}</p> : null}
+        
             </div>
         </div>
     )
